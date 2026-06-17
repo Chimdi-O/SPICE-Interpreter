@@ -17,4 +17,12 @@ def BuildMatrix(Circuit,mode):
 
     for component in Circuit.components: 
          matrix = component.stamp(matrix_a,matrix_b,Circuit.node_map,extra_unknown_map,mode)
+    
+
+    aug_matrix = matrix_a
+
+    for i in range(n): 
+         aug_matrix[i].append(matrix_b[i])
+
+    return aug_matrix
             

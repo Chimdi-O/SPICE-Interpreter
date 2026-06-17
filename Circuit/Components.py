@@ -15,7 +15,6 @@ class Component():
         if row != None and column != None: 
              matrix[row][column] += value 
 
-
 class Resistor(Component): 
 
     def stamp(self,matrix_a,matrix_b,node_map,extra_unknown_map,mode): 
@@ -29,7 +28,6 @@ class Resistor(Component):
         self.stamp_cell(b,a,-g,matrix_a)
         self.stamp_cell(b,b,g,matrix_a)
    
-
 class Capacitor(Component): 
     def stamp(self,matrix_a,matrix_b,node_map,extra_unknown_map,mode): 
         if mode == "op": 
@@ -38,7 +36,6 @@ class Capacitor(Component):
         elif mode == "tran": 
             pass
         
-
 class Inductor(Component): 
     def stamp(self,matrix_a,matrix_b,node_map,extra_unknown_map,mode):
         if mode == "op": # in OP inductor is a short which means a voltage source with an inductance of zero1``
@@ -54,7 +51,6 @@ class Inductor(Component):
         if mode == "tran": 
             pass 
 
-    
 
 class VoltageSource(Component): 
     def stamp(self,matrix_a,matrix_b,node_map,extra_unknown_map,mode):
