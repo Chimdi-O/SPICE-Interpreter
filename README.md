@@ -36,7 +36,7 @@ Python hides complexities that C++ does not, which allows me to focus on the arc
 ## Progress
 
 - [x] Parsing SPICE files
-- [ ] Input validation
+- [x] Input validation
 - [ ] Dynamic file selection
 - [x] Basic components (resistors, capacitors, inductors, voltage sources)
 - [x] Matrix builder / solver
