@@ -42,6 +42,7 @@ Python hides complexities that C++ does not, which allows me to focus on the arc
 - [x] Matrix builder / solver
 - [x] Operating Point
 - [x] Output Formatting
+- [ ] Current sources 
 - [ ] Transient
 - [ ] Waveform plotting
 - [ ] Diodes
