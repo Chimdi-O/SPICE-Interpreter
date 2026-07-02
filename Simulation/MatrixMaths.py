@@ -13,7 +13,7 @@ def buildMatrix(Circuit,mode):
 
     n = len(Circuit.node_map)+len(Circuit.extra_unknown_map)
     matrix_a = [[0 for _ in range(n)] for _ in range(n)]
-    matrix_b = [0]*n
+    matrix_b = [[0] for _ in range(n)]
   
     for component in Circuit.components: 
          matrix = component.stamp(matrix_a,matrix_b,Circuit.node_map,Circuit.extra_unknown_map,mode)
@@ -22,7 +22,7 @@ def buildMatrix(Circuit,mode):
     aug_matrix = matrix_a
 
     for i in range(n): 
-         aug_matrix[i].append(matrix_b[i])
+         aug_matrix[i].append(matrix_b[i][0])
 
     return aug_matrix
             

@@ -1,5 +1,5 @@
 from Circuit.Circuit import Circuit
-from Circuit.Components import Resistor, Inductor, Capacitor, VoltageSource
+from Circuit.Components import Resistor, Inductor, Capacitor, VoltageSource, CurrentSource
 from Simulation.SimulationManager import SimulationManager
 import sys 
 from Simulation.SimulationTypes.OperatingPoint import OperatingPoint 
@@ -86,6 +86,9 @@ class Interpreter():
         
         elif name.startswith("V"): 
             return VoltageSource(name,nodes,str_value,num_value)
+        
+        elif name.startswith("I"): 
+            return CurrentSource(name,nodes,str_value,num_value)
         
         else: 
             print(f"Error: Unknown component type {name} on line {self.current_line}")
