@@ -37,12 +37,12 @@ Python hides complexities that C++ does not, which allows me to focus on the arc
 
 - [x] Parsing SPICE files
 - [x] Input validation
-- [ ] Dynamic file selection
 - [x] Basic components (resistors, capacitors, inductors, voltage sources)
 - [x] Matrix builder / solver
 - [x] Operating Point
 - [x] Output Formatting
-- [ ] Current sources 
+- [ ] Current sources
+- [ ] Power calculations 
 - [ ] Transient
 - [ ] Waveform plotting
 - [ ] Diodes
